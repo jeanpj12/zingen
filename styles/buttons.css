@@ -41,19 +41,20 @@
 
 .btn[aria-label] {
     position: relative;
-
+    
     &::before {
         content: "";
         position: absolute;
-        background-image: var(--bg-color);
-        border-radius: inherit;
+        background-color: var(--bg-color);
         inset: 1.5px;
+        border-radius: inherit;
+        z-index: 0;
     }
 
     &::after {
         content: attr(aria-label);
         background: var(--btn-bg-color);
-        --webkit-background-clip: text;
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         position: relative;
