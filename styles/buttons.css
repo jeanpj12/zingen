@@ -46,7 +46,7 @@
         content: "";
         position: absolute;
         background-color: var(--bg-color);
-        inset: 1.5px;
+        inset: 1px;
         border-radius: inherit;
         z-index: 0;
     }
